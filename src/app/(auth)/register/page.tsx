@@ -1,3 +1,5 @@
-export default function Register() {
-  return <main></main>;
+import Register from "@/pages/Auth/Register";
+
+export default function RegisterPage() {
+  return <Register />;
 }
