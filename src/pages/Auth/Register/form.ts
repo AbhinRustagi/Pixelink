@@ -1,10 +1,48 @@
-import * as yup from "yup";
-
-const schema = yup.object({
-  firstName: yup.string().required(),
-  lastName: yup.string(),
-  username: yup.string().required(),
-  email: yup.string().required(),
-  password: yup.string().required(),
-  confirmPassword: yup.string().required(),
-});
+export const fields = [
+  {
+    name: "firstName",
+    type: "text",
+    label: "First Name",
+    placeholder: "Eric",
+    initialValue: "",
+    autoComplete: "off",
+  },
+  {
+    name: "lastName",
+    type: "text",
+    label: "Last Name",
+    placeholder: "Foreman",
+    initialValue: "",
+    autoComplete: "off",
+  },
+  {
+    name: "email",
+    type: "email",
+    label: "Email",
+    placeholder: "eric.foreman@gmail.com",
+    initialValue: "",
+    autoComplete: "off",
+  },
+  {
+    name: "username",
+    type: "text",
+    label: "Username",
+    placeholder: "eric.foreman",
+    initialValue: "",
+    autoComplete: "off",
+  },
+  {
+    name: "password",
+    type: "password",
+    label: "Password",
+    placeholder: "donnapinciatti",
+    initialValue: "",
+  },
+  {
+    name: "confirmPassword",
+    type: "password",
+    label: "Confirm Password",
+    placeholder: "donnapinciatti",
+    initialValue: "",
+  },
+];
